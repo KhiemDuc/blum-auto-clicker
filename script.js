@@ -5,6 +5,7 @@
 
   const autoPlay = true;
   const gc = [229, 120, 50];
+  const gd = [137, 129, 129]
   const t = 5;
 
   if (autoPlay) {
@@ -38,8 +39,9 @@
         const b = pixels[index + 2];
 
         const greenRange = (gc[0] - t < r && r < gc[0] + t) && (gc[1] - t < g && g < gc[1] + t) && (gc[2] - t < b && b < gc[2] + t);
+        const boomb = (gd[0] - t < r && r < gd[0] + t) && (gd[1] - t < g && g < gd[1] + t) && (gd[2] - t < b && b < gd[2] + t);
 
-        if (greenRange) {
+        if (greenRange || boomb) {
           simulateClick(screenCanvas, x, y);
         }
       }
