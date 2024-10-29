@@ -4,7 +4,7 @@
   window.BlumAC = true;
 
   const autoPlay = true;
-  const gc = [208, 216, 0];
+  const gc = [229, 120, 50];
   const t = 5;
 
   if (autoPlay) {
